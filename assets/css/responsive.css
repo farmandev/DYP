@@ -1,0 +1,68 @@
+/* LG Device :992px. */
+
+@media only screen and (min-width: 1600px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+   
+
+}
+
+@media only screen and (min-width: 992px) {
+    .main-menu {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-menu {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-menu .nav-item .nav-link {
+
+        font-size: 11px;
+    }
+
+    .main-menu .nav-item {
+        padding: 0 5px;
+    }
+
+  
+}
+
+
+/* MD Device :768px. */
+
+@media only screen and (min-width: 768px) {
+    .md-none {
+        display: none;
+    }
+
+}
+
+/* Extra small Device. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .xs-none {
+        display: none;
+    }
+
+    .xs-block {
+        display: block;
+    }
+
+
+    
+}
