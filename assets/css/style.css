@@ -443,7 +443,7 @@ a:hover {
 }
 
 .header-left {
-    width: 35%;
+    width: 38%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -466,15 +466,16 @@ a:hover {
     line-height: 24px;
     text-transform: uppercase;
     font-family: "Calibre Medium";
-    font-weight: 600;
 }
 
-.header-left a img,
-.header-left img {
-    margin-right: 6px;
+.header-left .dropdown span,
+.header-left div:last-child a img {
+    margin-left: 3px;
 }
-
-
+.header-left img{
+    position: relative;
+    top: 3px;
+}
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -483,15 +484,15 @@ a:hover {
 
 .dropdown ul {
     position: absolute;
-    top: 30px;
-    left: 0;
-    background: #ddd;
+    top: 34px;
+    left: -10px;
     width: 100%;
     padding: 14px 5px 10px 15px;
     border-radius: 4px;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    box-shadow: 0  5px 18px rgba(0,0,0,0.3);
 }
 
 .dropdown.open ul {
@@ -509,7 +510,6 @@ a:hover {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
-    border-bottom: 10px solid #DDDDDD;
     border-right: 8px solid transparent;
     transform: translateX(-50%);
 }
@@ -517,7 +517,7 @@ a:hover {
 .dropdown ul li a,
 .dropdown ul li span {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 22px;
     text-transform: capitalize;
     font-family: "Calibre Regular";
     font-weight: 400;
@@ -526,7 +526,8 @@ a:hover {
 
 
 .header-right {
-    width: 45%;
+    width: 43%;
+    padding-right: 15px;
 }
 
 .header-right ul li {
@@ -560,7 +561,6 @@ a:hover {
 
 .right-content {
     width: 80%;
-    background: #f1f1f1;
 }
 
 /*---------------------------------

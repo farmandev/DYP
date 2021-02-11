@@ -1,0 +1,36 @@
+/*---------------------------------
+        Theme dark Color CSS
+--------------------------------*/
+body.theme-dark,
+body.theme-dark .dropdown.open ul {
+    background-color: #26202A;
+}
+
+body.theme-dark .header-wrap,
+body.theme-dark .sidebar,
+body.theme-dark .graph-wrap,
+body.theme-dark .content-footer,
+body.theme-dark .table-box {
+    background-color: #111015;
+}
+
+body.theme-dark .header-left a,
+body.theme-dark .header-left span {
+    color: #fff;
+}
+
+body.theme-dark .header-right ul li a,
+body.theme-dark .dropdown.open ul li a,
+body.theme-dark .header-left ul li a span {
+    color: #A3A2A4
+}
+
+body.theme-dark .dropdown ul::before {
+
+    border-bottom: 10px solid #26202A;
+}
+
+body.theme-dark .dropdown ul li a:hover,
+body.theme-dark .dropdown ul li a:hover span {
+    color: #fff !important;
+}
