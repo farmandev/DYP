@@ -9,7 +9,7 @@
 
     // sticky
     var wind = $(window);
-    var sticky = $('.header-bar-area');
+    var sticky = $('.header-wrap');
     wind.on('scroll', function() {
         var scroll = wind.scrollTop();
         if (scroll < 100) {
@@ -18,120 +18,28 @@
             sticky.addClass('sticky');
         }
     });
-    /*=========================
-      OwlCarousel START
-    ===========================*/
-    $(document).ready(function() {
-        if ($(window).width() < 768) {
-            startCarousel();
-        } else {
-            $('.owl-carousel').addClass('off');
-        }
+
+    $('.dropdown').on('click',function(){
+        $(this).toggleClass('open')
     });
+    //Progress Bar Animation
+    // $('.progress-bar').appear(function() {
+    //     var element = $(this);
+    //     var delay = 500;
+    //     element.each(function(i) {
+    //         $(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
 
-    $(window).resize(function() {
-        if ($(window).width() < 768) {
-            startCarousel();
-        } else {
-            stopCarousel();
-        }
-    });
-
-    function startCarousel() {
-        $(".testimonial_slider").owlCarousel({
-            items: 1,
-            nav: false,
-            dot: true,
-            autoplayTimeout: 2000,
-            loop: false,
-            margin: 4,
-            smartSpeed: 450,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                767: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                1000: {
-                    items: 1,
-
-                }
-            }
-        });
-         $(".press_slider").owlCarousel({
-            items: 1,
-            nav: false,
-            dot: true,
-            autoplayTimeout: 2000,
-            loop: false,
-            margin: 4,
-            smartSpeed: 450,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                767: {
-                    items: 1,
-                    nav: false,
-                    dot: true
-
-                },
-                1000: {
-                    items: 1,
-
-                }
-            }
-        });
-    }
-
-    function stopCarousel() {
-        var owl = $('.owl-carousel');
-        owl.trigger('destroy.owl.carousel');
-        owl.addClass('off');
-    }
-
-    $(".showcase_slider").owlCarousel({
-        items: 3,
-        nav: true,
-        dot: false,
-        autoplayTimeout: 2000,
-        loop: false,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-        margin: 4,
-        smartSpeed: 450,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false,
-                dot: true
-
-            },
-            
-            768: {
-                items: 2,
-
-            },
-            1000: {
-                items: 3,
-
-            }
-        }
-
-
-    });
+    //         $(this.span).prop('Counter', 0).animate({
+    //             Counter: $(this).text()
+    //         }, {
+    //             duration: delay,
+    //             easing: 'swing',
+    //             step: function(now) {
+    //                 $(this).text(Math.ceil(now) + '%');
+    //             }
+    //         });
+    //     });
+    // });
 
 
 
