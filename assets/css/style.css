@@ -419,7 +419,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     z-index: 999;
     transition: 0.3s;
 }
@@ -443,7 +443,7 @@ a:hover {
 }
 
 .header-left {
-    width: 38%;
+    width: 35%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -472,10 +472,12 @@ a:hover {
 .header-left div:last-child a img {
     margin-left: 3px;
 }
-.header-left img{
+
+.header-left img {
     position: relative;
     top: 3px;
 }
+
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -492,7 +494,7 @@ a:hover {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
-    box-shadow: 0  5px 18px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown.open ul {
@@ -526,7 +528,7 @@ a:hover {
 
 
 .header-right {
-    width: 43%;
+    width: 45%;
     padding-right: 15px;
 }
 
@@ -551,21 +553,22 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 100px 0 0;
 }
 
-.sidebar {
-    width: 18%;
-    background: #ddd;
-}
-
-.right-content {
-    width: 80%;
-}
 
 /*---------------------------------
         Sidebar CSS
 --------------------------------*/
+.sidebar {
+    background: #ddd;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    width: 18%;
+    height: 100vh;
+    padding: 20px 0;
+}
+
 .theme-dark .logo img.logo-white,
 .theme-white .logo img.logo-black {
     display: block;
@@ -578,6 +581,76 @@ a:hover {
 
 }
 
+.logo .home-menu,
+.menu-cat-one,
+.menu-cat-two {
+    padding: 0 20px;
+}
+
+
+.logo {
+    margin: 0 0 80px;
+}
+
+.logo a img {
+    display: block;
+    margin: 0 auto;
+    max-width: 85px;
+}
+
+.home-menu a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F9656E;
+    padding: 20px;
+    margin: 0 0 60px;
+}
+
+.home-menu a span,
+.menu-cat-one ul li a span,
+.menu-cat-two ul li a span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+.home-menu a img {
+    transform: scale(0.7);
+    position: relative;
+    top: -3px;
+}
+
+.menu-cat-one ul li a img,
+.menu-cat-two ul li a img {
+    transform: scale(0.6);
+    position: relative;
+    top: 7px;
+}
+
+.menu-cat-one h6,
+.menu-cat-two h6 {
+    font-size: 16px;
+    color: #707073;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #F9656E;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+.menu-cat-two{
+    margin: 70px 0 0;
+}
+
 /*---------------------------------
-        Hero CSS
+        Right Content CSS
 --------------------------------*/
+
+
+.right-content {
+    width: 80%;
+    margin-left: 20%;
+}
