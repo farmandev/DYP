@@ -19,15 +19,17 @@
         }
     });
 
-
+    //dropdown list
     $('.dropdown').on('click', function() {
         $(this).toggleClass('open')
     });
 
+    //Minimize sidebar
     $('.minimize_btn').on('click', function() {
         $('.page_wrapper').toggleClass('minimize')
     });
 
+    //Change theme Color
     $('.change-clr').on('click', function() {
         if($('body').hasClass('theme-dark')){
             $('body').removeClass('theme-dark');
@@ -37,6 +39,7 @@
             $('body').removeClass('theme-white');
         }
     });
+
     //Progress Bar Animation
     // $('.progress-bar').appear(function() {
     //     var element = $(this);
@@ -60,13 +63,23 @@
     var nice = $(".sidebar").niceScroll();
 
 
-    // Show or hide the sticky footer button
+    // Show or hide the scroll-to-top button
     $(window).on('scroll', function(event) {
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
         } else {
             $('.back-to-top').fadeOut(200)
         }
+    });
+
+
+    //Animate the scroll to top
+    $('.back-to-top').on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 1500);
     });
 
 

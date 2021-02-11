@@ -14,7 +14,7 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
     <!--====== Icon css ======-->
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
     <!--====== Style css ======-->
     <!-- <link href="assets/css/perfect-scroll.css" rel="stylesheet"> -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -121,7 +121,6 @@
                         <li class="change-clr"><a href="javascript:void(0)"><img src="assets/img/gear.png" alt="Image"><span>Change theme Color</span></a></li>
                     </ul>
                 </div>
-                
             </div>
             <div class="right-content">
                 <div class="graph-wrap">
@@ -149,8 +148,8 @@
                             </div>
                             <div class="graph-header-right">
                                 <button class="btn v1">Trade</button>
-                                <button class="btn v2"></button>
-                                <button class="btn v3"></button>
+                                <button class="btn v2"><img src="assets/img/star.png" alt="Image"></button>
+                                <button class="btn v3"><img src="assets/img/share.png" alt="Image"></button>
                             </div>
                         </div>
                         <div class="graph-data">
@@ -200,8 +199,12 @@
                     </div>
                     <div class="graph-right">
                         <div class="search-box">
-                            <input type="search" placeholder="Search Pair By Symbol / Name / Pair Contract / Token Contract">
-                            <button type="submit"><img src="assets/img/search-2.png" alt="Image"></button>
+                            <form id="searchform">
+                                <input type="text" id="search-bar" autocomplete="off" placeholder="Search Pair By Symbol / Name / Pair Contract / Token Contract" />
+                                <ul class="output" style="display:none;">
+                                </ul>
+                                <button type="submit" id="submit"><img src="assets/img/search-2.png" alt="Image"></button>
+                            </form>
                         </div>
                         <div class="chart-wrap">
                             <img clalss="graph-one" src="assets/img/graph-black.png" alt="Image">
@@ -321,9 +324,9 @@
                     </div>
                     <div class="page-nav">
                         <ul>
-                            <li><a href="#"><img src="assets/img/prev.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/arrow-left.png" alt="Image"></a></li>
                             <li><span>Page 1 of 20</span></li>
-                            <li><a href="#"><img src="assets/img/next.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/arro-right.png" alt="Image"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -337,6 +340,25 @@
                             <li><a href="#">Audit</a></li>
                         </ul>
                     </div>
+                    <div class="social-profile">
+                        <ul>
+                            <!-- <li><a href="#"><img src="assets/img/discord.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/mail.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/forum.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/github.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/medium.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/telegram.png" alt="Image"></a></li>
+                            <li><a href="#"><img src="assets/img/twitter.png" alt="Image"></a></li> -->
+                            <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                            <li><a href="#"><i class="fas fa-users"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#"><i class="fab fa-medium"></i></a></li>
+                            <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,9 +369,11 @@
     <!--====== BACK TO TOP ENDS ======-->
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <!--====== nicescroll js ======-->
+    <script src='assets/js/nicescroll.js'></script>
+    <!--====== Autosearch  js ======-->
+    <script src='assets/js/autosearch.js'></script>
     <!--====== Main js ======-->
-    <!-- <script src="assets/js/perfect-scroll.js"></script> -->
-        <script src='https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js'></script>
     <script src="assets/js/main.js"></script>
 </body>
 

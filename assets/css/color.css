@@ -63,7 +63,21 @@ body.theme-dark .home-menu a,
 body.theme-dark .minimize_btn {
     background-color: var(--preloader-clr);
 }
-
+body.theme-dark  .back-to-top {
+   
+    background: var(--preloader-clr);
+}
+body.theme-dark .social-profile ul li a i{
+   color: var(--preloader-clr);
+}
+body.theme-dark .table-head,
+body.theme-dark .table-data {
+    background: var(--black);
+}
+body.theme-dark .table-data-item a,
+body.theme-white .table-data-item a{
+    color: #968BFF!important;
+}
 /*--------------------------
 	theme white color CSS
 ----------------------------*/
@@ -118,4 +132,15 @@ body.theme-white .minimize_btn {
 }
 body.theme-white .home-menu a span{
     color: var(--white)!important;
+}
+body.theme-white  .back-to-top {
+   
+    background: var(--black);
+}
+body.theme-white .social-profile ul li a i{
+   color: var(--red);
+}
+body.theme-white .table-head,
+body.theme-white .table-data {
+    background: var(--white);
 }
