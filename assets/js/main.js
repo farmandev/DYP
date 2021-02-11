@@ -27,6 +27,16 @@
     $('.minimize_btn').on('click', function() {
         $('.page_wrapper').toggleClass('minimize')
     });
+
+    $('.change-clr').on('click', function() {
+        if($('body').hasClass('theme-dark')){
+            $('body').removeClass('theme-dark');
+            $('body').addClass('theme-white');
+        }else{
+            $('body').addClass('theme-dark');
+            $('body').removeClass('theme-white');
+        }
+    });
     //Progress Bar Animation
     // $('.progress-bar').appear(function() {
     //     var element = $(this);
@@ -46,6 +56,8 @@
     //     });
     // });
 
+    //Nicescroll
+    var nice = $(".sidebar").niceScroll();
 
 
     // Show or hide the sticky footer button
@@ -57,8 +69,6 @@
         }
     });
 
-
-    var nice = $(".sidebar").niceScroll(); // The document page (body)
 
 
 })(jQuery);

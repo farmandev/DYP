@@ -1,25 +1,41 @@
 /*---------------------------------
         Theme dark Color CSS
 --------------------------------*/
+
+/*Color variables*/
+:root {
+    --black: #000;
+    --white: #fff;
+    --red: #E30613;
+    --grey: #26202A;
+    --concrete: #F2F2F2;
+    --preloader-clr: #F9656E;
+    --bg-overlaay: rgba(0, 0, 0, 0.8);
+}
+
+body.theme-dark h4,
+body.theme-dark p,
+body.theme-dark a,
+body.theme-dark span,
+body.theme-dark .header-left a,
+body.theme-dark .header-left span {
+    color: var(--white) !important;
+}
+
 body.theme-dark,
 body.theme-dark .dropdown.open ul {
-    background-color: #26202A;
+    background-color: var(--grey);
 }
 
 body.theme-dark .header-wrap,
 body.theme-dark .sidebar,
 body.theme-dark .graph-wrap,
 body.theme-dark .content-footer,
-body.theme-dark .table-box {
-    background-color: #111015;
+body.theme-dark .table-title {
+    background-color: var(--black);
 }
 
-body.theme-dark .header-left a,
-body.theme-dark .header-left span {
-    color: #fff;
-}
 
-body.theme-dark .header-right ul li a,
 body.theme-dark .dropdown.open ul li a,
 body.theme-dark .header-left ul li a span {
     color: #A3A2A4
@@ -27,22 +43,79 @@ body.theme-dark .header-left ul li a span {
 
 body.theme-dark .dropdown ul::before {
 
-    border-bottom: 10px solid #26202A;
+    border-bottom: 10px solid var(--grey)
 }
 
 body.theme-dark .dropdown ul li a:hover,
 body.theme-dark .dropdown ul li a:hover span {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 body.theme-dark .menu-cat-one ul li a span,
 body.theme-dark .menu-cat-two ul li a span,
 body.theme-dark .home-menu a span {
-    color: #fff;
+    color: var(--white);
 
 }
 
-body.theme-dark
-body.theme-dark
-body.theme-dark
-body.theme-dark
+
+body.theme-dark .home-menu a,
+body.theme-dark .minimize_btn {
+    background-color: var(--preloader-clr);
+}
+
+/*--------------------------
+	theme white color CSS
+----------------------------*/
+
+body.theme-white h4,
+body.theme-white p,
+body.theme-white a,
+body.theme-white span,
+body.theme-white .header-left a,
+body.theme-white .header-left span {
+    color: var(--black) !important;
+}
+
+body.theme-white,
+body.theme-white .dropdown.open ul {
+    background-color: var(--concrete);
+}
+
+body.theme-white .header-wrap,
+body.theme-white .sidebar,
+body.theme-white .graph-wrap,
+body.theme-white .content-footer,
+body.theme-white .table-title {
+    background-color: var(--white);
+}
+
+
+body.theme-white .dropdown.open ul li a,
+body.theme-white .header-left ul li a span {
+    color: #A3A2A4
+}
+
+body.theme-white .dropdown ul::before {
+
+    border-bottom: 10px solid var(--grey)
+}
+
+body.theme-whitewhite .dropdown ul li a:hover,
+body.theme-whitewhite .dropdown ul li a:hover span {
+    color: var(--white) !important;
+}
+
+body.theme-white .menu-cat-one ul li a span,
+body.theme-white .menu-cat-two ul li a span,
+body.theme-white .home-menu a span {
+    color: var(--white);
+
+}
+body.theme-white .home-menu a,
+body.theme-white .minimize_btn {
+    background-color: var(--red);
+}
+body.theme-white .home-menu a span{
+    color: var(--white)!important;
+}
