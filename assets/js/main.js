@@ -19,8 +19,13 @@
         }
     });
 
-    $('.dropdown').on('click',function(){
+
+    $('.dropdown').on('click', function() {
         $(this).toggleClass('open')
+    });
+
+    $('.minimize_btn').on('click', function() {
+        $('.page_wrapper').toggleClass('minimize')
     });
     //Progress Bar Animation
     // $('.progress-bar').appear(function() {
