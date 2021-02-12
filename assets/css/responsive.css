@@ -1,41 +1,164 @@
 /* LG Device :992px. */
 
-@media only screen and (min-width: 1600px) {
-    
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    .right-content {
+        padding: 120px 20px 0 0;
+    }
+
+    .header-right ul li a {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
-@media only screen and (min-width: 1200px) {
-   
+@media only screen and (min-width: 1200px) and (max-width: 991px) {}
 
-}
+@media only screen and (min-width: 1200px) and (max-width: 991px) {}
 
 @media only screen and (min-width: 992px) {
-    .main-menu {
-        display: inline-block;
-        visibility: visible;
-        opacity: 1;
+    .header-center {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .main-menu {
+    .page_wrapper {
+        overflow-x: hidden !important;
+    }
+
+    .header-wrap {
+        padding: 15px 0;
+    }
+
+    .header-left {
+        width: 65%;
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+
+    .header-center {
+        width:100%;
+        padding-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+    }
+
+    .hamburger-menu {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #26202A;
+        margin: 2px auto;
+    }
+
+    .header-right {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 15px 0 0;
+        overflow: hidden;
+        background: #26202A;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: -100%;
+        transition: 0.3s;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .close-sidebar {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+
+
+
+    .right-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .graph-left,
+    .graph-right {
+        width: 100%;
+    }
+
+    .minimize-wrap {
         display: none;
-        visibility: hidden;
-        opacity: 0;
+    }
+
+    .table-wrap {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-head,
+    .table-data {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-head-item {
+        min-width: 100px;
+    }
+
+    .footer-menu ul li a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 10px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .main-menu .nav-item .nav-link {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+    .header-left a,
+    .header-left span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .header-right ul li {
+        margin-left: 10px;
+    }
+
+    .header-right ul li a {
         font-size: 11px;
     }
 
-    .main-menu .nav-item {
-        padding: 0 5px;
+    .home-menu a span,
+    .menu-cat-one ul li a span,
+    .menu-cat-two ul li a span {
+        font-size: 14px;
     }
 
-  
+    .suggest-item h2 {
+        font-size: 22px;
+    }
+
 }
 
 
@@ -51,18 +174,30 @@
 /* Extra small Device. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
+    .header-left a,
+    .header-left span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .header-left div {
+        margin-right: 16px;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .xs-none {
-        display: none;
+
+    .header-left a,
+    .header-left span {
+        font-size: 10px;
+        line-height: 18px;
     }
 
-    .xs-block {
-        display: block;
+    .header-left div {
+        margin-right: 12px;
     }
 
 
-    
+
 }

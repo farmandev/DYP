@@ -91,6 +91,9 @@ body.theme-dark .popup-total p {
     background:#F9656E;
     color: #fff; 
 }
+ .close-sidebar i {
+        color:#fff
+    }
 /*--------------------------
 	theme white color CSS
 ----------------------------*/

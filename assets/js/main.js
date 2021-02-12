@@ -48,6 +48,13 @@
             $('body').removeClass('theme-white');
         }
     });
+    //open & close Sidebar in mobile
+    $('.hamburger-menu').on('click', function() {
+        $('.sidebar').addClass('open')
+    });
+    $('.close-sidebar').on('click', function() {
+        $('.sidebar').removeClass('open')
+    });
 
     //Progress Bar Animation
     // $('.progress-bar').appear(function() {
