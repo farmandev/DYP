@@ -31,10 +31,10 @@
 
     //Change theme Color
     $('.change-clr').on('click', function() {
-        if($('body').hasClass('theme-dark')){
+        if ($('body').hasClass('theme-dark')) {
             $('body').removeClass('theme-dark');
             $('body').addClass('theme-white');
-        }else{
+        } else {
             $('body').addClass('theme-dark');
             $('body').removeClass('theme-white');
         }
@@ -81,7 +81,20 @@
             scrollTop: 0,
         }, 1500);
     });
+    //progressbar
+    var progress_one = document.querySelector('.progress-done-one');
+    var progress_two = document.querySelector('.progress-done-two');
+    var progress_three = document.querySelector('.progress-done-three');
+    var progress_four = document.querySelector('.progress-done-four');
 
+    progress_one.style.width = progress_one.getAttribute('data-done') + '%';
+    progress_two.style.width = progress_two.getAttribute('data-done') + '%';
+    progress_three.style.width = progress_three.getAttribute('data-done') + '%';
+    progress_four.style.width = progress_four.getAttribute('data-done') + '%';
+    progress_one.style.opacity = 1;
+    progress_two.style.opacity = 1;
+    progress_three.style.opacity = 1;
+    progress_four.style.opacity = 1;
 
 
 })(jQuery);
