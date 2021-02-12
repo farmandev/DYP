@@ -18,7 +18,9 @@
 @media only screen and (min-width: 1200px) and (max-width: 991px) {}
 
 @media only screen and (min-width: 992px) {
-    .header-center {
+
+    .header-center,
+    .close-sidebar {
         display: none;
     }
 }
@@ -82,7 +84,7 @@
     }
 
     .sidebar {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         width: 100%;
@@ -244,6 +246,29 @@
     .popup-header,
     .popup-body {
         padding: 0 15px;
+    }
+
+    .popup-header-item p,
+    .popup-header-item span {
+        font-size: 16px;
+    }
+
+    .popup-body-item p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .popup-total {
+        padding: 28px 15px 24px;
+    }
+
+    .popup-total h6,
+    .popup-total p {
+        font-size: 18px;
+    }
+
+    .popup-close {
+        padding: 18px 15px 0;
     }
 
 }
