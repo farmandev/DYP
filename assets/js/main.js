@@ -86,15 +86,18 @@
     var progress_two = document.querySelector('.progress-done-two');
     var progress_three = document.querySelector('.progress-done-three');
     var progress_four = document.querySelector('.progress-done-four');
+    var progress_five = document.querySelector('.progress-done-five');
 
     progress_one.style.width = progress_one.getAttribute('data-done') + '%';
     progress_two.style.width = progress_two.getAttribute('data-done') + '%';
     progress_three.style.width = progress_three.getAttribute('data-done') + '%';
     progress_four.style.width = progress_four.getAttribute('data-done') + '%';
+    progress_five.style.width = progress_five.getAttribute('data-done') + '%';
     progress_one.style.opacity = 1;
     progress_two.style.opacity = 1;
     progress_three.style.opacity = 1;
     progress_four.style.opacity = 1;
+    progress_five.style.opacity = 1;
 
 
 })(jQuery);
