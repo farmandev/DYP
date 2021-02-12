@@ -1357,7 +1357,8 @@ body.theme-dark img.graph-two {
 
 }
 
-.popup-header {
+.popup-header,
+.popup-body {
     padding: 0 60px;
 }
 
