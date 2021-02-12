@@ -1,29 +1,24 @@
 $(document).ready(function(){
   
 var $terms = [
-  'search',
-  'test',
-  'css',
-  '<h2>Lorem ipsum dolor, <span>sit amet.</span></h2> <br><p>Lorem, ipsum, dolor.</p>',
-  'bear',
-  'cat',
-  'crabapple',
-  'creep',
-  'czar',
-  'danger',
-  'dominant',
-  'doppler',
-  'everclear',
-  'evangelism',
-  'frodo'
+  
+  '<div class="suggest-item"><h2><span class="wh_txt">WETH</span>  /DYP <span class="bar">-</span> DeFiYieldProtocol</h2>\
+            <p>Token: ...F6a867e3091bcef17 - Pair: ...F6a867e3091bcef17</p> \
+            <p>Total Volume: $10,232,344.08</p>\
+   </div>',
+   '<div class="suggest-item"><h2><span class="wh_txt">WETH</span>  /DYP <span class="bar">-</span> DeFiYieldProtocol</h2>\
+            <p>Token: ...F6a867e3091bcef17 - Pair: ...F6a867e3091bcef17</p> \
+            <p>Total Volume: $10,232,344.08</p>\
+   </div>',
+ 
    ].sort(),
    $return = [];
   
 function strInArray(str, strArray) {
   for (var j=0; j<strArray.length; j++) {
     if (strArray[j].match(str) && $return.length < 5) {
-      var $h = strArray[j].replace(str, '<span>'+str+'</span>');
-      $return.push('<li class="prediction-item"><h2>' + $h + '</span></h2></li>');
+      var $h = strArray[j].replace(str, ''+str+'');
+      $return.push('<li class="prediction-item">' + $h + '</li>');
     }
   }
 }

@@ -19,6 +19,12 @@
     src: url(../fonts/Calibre-Light.ttf);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :focus,
 button:focus {
     outline: 0;
@@ -678,7 +684,7 @@ a:hover {
 /*Minimize css*/
 .minimize-wrap {
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 18%;
     z-index: 999;
     transform: translateY(-50%);
@@ -813,6 +819,7 @@ a:hover {
 
 .content-title p {
     color: #707070;
+    margin: 0;
 }
 
 .content-title-top ul li {
@@ -820,13 +827,103 @@ a:hover {
     margin: 0 2px;
 }
 
-.output {
+
+#searchform {
+    position: relative;
+}
+
+#search-bar {
+    width: 100%;
+    height: 54px;
+    background: #26202A;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #707070;
+    padding: 10px 0 10px 20px;
+}
+
+#submit {
     position: absolute;
+    top: 19px;
+    right: 14px;
+    background: transparent;
+    border: none;
 }
 
 /*-----autosearch----*/
+
 .output {
     position: absolute;
+    background: #26202A;
+    padding: 40px 0 0;
+    width: 100%;
+    margin: 10px 0 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.output::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    content: "Pair Ordered By Volume";
+    font-size: 14px;
+    opacity: 0.7;
+    display: block;
+    padding: 0 28px 20px;
+    color: #fff;
+}
+
+.search-minititle {
+    font-size: 14px;
+    opacity: 0.7;
+    border-bottom: 1px solid #4C2C36;
+    display: block;
+    padding: 0 28px 20px;
+}
+.prediction-item:first-child{
+    border-top:  1px solid #4C2C36;
+    margin: 10px 0 0;
+}
+.suggest-item {
+    padding: 10px 28px;
+    border-bottom: 1px solid #4C2C36;
+}
+
+.suggest-item h2 {
+    font-size: 27px;
+    line-height: 36px;
+    font-family: "Calibre Medium";
+    color: #F9656E;
+}
+
+.suggest-item h2 span.wh_txt {
+    color: #707070;
+    font-family: "Calibre Regular";
+    font-weight: 300;
+}
+
+.suggest-item h2 span.bar {
+    margin: 0 10px;
+}
+
+.suggest-item p {
+    font-size: 16px;
+    opacity: 0.6;
+    margin: 0;
+    font-weight: ;
+    font-family: "Calibre Light";
+    line-height: 20px;
+}
+body.theme-dark img.graph-one,
+body.theme-white img.graph-two{
+    display: block;
+}
+body.theme-white img.graph-one,
+body.theme-dark img.graph-two{
+    display: none;
 }
 
 /*-----table----*/

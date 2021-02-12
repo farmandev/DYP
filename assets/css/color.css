@@ -78,6 +78,11 @@ body.theme-dark .table-data-item a,
 body.theme-white .table-data-item a{
     color: #968BFF!important;
 }
+body.theme-dark .search-minititle {
+    opacity: 0.7;
+    color: #707070;
+}
+
 /*--------------------------
 	theme white color CSS
 ----------------------------*/
