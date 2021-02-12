@@ -82,7 +82,15 @@ body.theme-dark .search-minititle {
     opacity: 0.7;
     color: #707070;
 }
-
+body.theme-dark .popup-total h6,
+body.theme-dark .popup-total p {
+    color: #F9656E!important;
+}
+.popup-close button{
+   
+    background:#F9656E;
+    color: #fff; 
+}
 /*--------------------------
 	theme white color CSS
 ----------------------------*/

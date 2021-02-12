@@ -23,7 +23,16 @@
     $('.dropdown').on('click', function() {
         $(this).toggleClass('open')
     });
-
+    //Open popup
+    $('.popup-btn').on('click', function() {
+        $('.popup-modal').addClass('open');
+        $('.body_overlay').addClass('open');
+    });
+    //close popup
+    $('.popup-close button, .body_overlay').on('click', function() {
+        $('.popup-modal').removeClass('open');
+        $('.body_overlay').removeClass('open');
+    });
     //Minimize sidebar
     $('.minimize_btn').on('click', function() {
         $('.page_wrapper').toggleClass('minimize')

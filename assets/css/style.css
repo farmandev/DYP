@@ -414,9 +414,11 @@ a:hover {
     padding: 9px 13px 5px;
     border-radius: 3px;
 }
-.mt-30{
+
+.mt-30 {
     margin-top: 30px;
 }
+
 /*--------------------------------
        Header CSS
 ---------------------------------*/
@@ -428,7 +430,7 @@ a:hover {
     left: 0;
     width: 100%;
     padding: 30px 0;
-    z-index: 999;
+    z-index: 9;
     transition: 0.3s;
 }
 
@@ -578,6 +580,7 @@ a:hover {
     height: calc(100vh - 100px);
     padding: 20px 0;
     overflow-y: auto;
+    z-index: 999;
     transition: 0.3s;
 }
 
@@ -1012,6 +1015,7 @@ body.theme-dark img.graph-two {
 .graph-header-right .btn {
     margin-left: 6px;
 }
+
 .progress-title {
     display: flex;
     justify-content: space-between;
@@ -1019,12 +1023,14 @@ body.theme-dark img.graph-two {
     flex-wrap: wrap;
     margin: 0 0 5px;
 }
+
 .progress-title p {
     font-size: 24px;
     margin: 0;
     line-height: 24px;
     opacity: 0.7;
 }
+
 .progress-title span {
     font-size: 24px;
     font-family: "Calibre Medium";
@@ -1044,9 +1050,10 @@ body.theme-dark img.graph-two {
     background-color: #280E15;
 }
 
-.progress.v1 .progress-done-one{
-    background-color: #9F7DDD!important; 
+.progress.v1 .progress-done-one {
+    background-color: #9F7DDD !important;
 }
+
 .progress-done-one,
 .progress-done-two,
 .progress-done-three,
@@ -1197,4 +1204,111 @@ body.theme-dark img.graph-two {
 
 .social-profile ul li a i {
     font-size: 18px;
+}
+
+
+/*-----------------------------
+    Modal
+-----------------------------*/
+.body_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.body_overlay.open{
+    visibility: visible;
+    opacity: 1;
+}
+.popup-modal {
+    position: absolute;
+    background: #26202A;
+    width: 600px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 0 30px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.popup-modal.open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+
+}
+
+.popup-header {
+    padding: 0 60px;
+}
+
+.popup-header-item,
+.popup-body-item,
+.popup-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popup-modal p {
+    margin: 0;
+}
+
+.popup-header-item p,
+.popup-header-item span {
+    font-size: 22px;
+    font-family: "Calibre Medium";
+    line-height: 28px;
+}
+
+.popup-body {
+    margin: 40px 0;
+    padding: 0 60px;
+}
+
+.popup-body-item p {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.popup-total {
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    padding: 28px 60px 24px;
+}
+
+.popup-total h6,
+.popup-total p {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Calibre Medium";
+}
+
+.popup-close {
+    padding: 18px 60px 0;
+    text-align: right;
+}
+
+.popup-close button {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Calibre Medium";
+    line-height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 22px 8px;
 }
