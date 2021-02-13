@@ -145,12 +145,13 @@ body.theme-dark .suggest-item h2 span.wh_txt {
 }
 
 body.theme-dark .progress {
-    background-color: var(--clr_two);
+    background-color: #27212B;
 }
 
 
 body.theme-dark .progress.v1 .progress-done-one {
-    background-color: #9F7DDD !important;
+    background: linear-gradient(90deg, rgba(160,126,224,1) 0%, rgba(128,96,171,1) 35%, rgba(93,63,113,1) 100%);
+
 }
 
 
@@ -159,7 +160,7 @@ body.theme-dark .progress-done-two,
 body.theme-dark .progress-done-three,
 body.theme-dark .progress-done-four,
 body.theme-dark .progress-done-five {
-    background: var(--preloader-clr);
+    background: linear-gradient(90deg, rgba(249,101,110,1) 0%, rgba(233,89,98,1) 35%, rgba(145,43,49,1) 100%);
     color: var(--white);
 }
 
@@ -216,8 +217,9 @@ body.theme-dark .hamburger-menu span {
     color: var(--black);
 }
 
-
-
+body.theme-dark .btn.v1{
+    background-color: var(--preloader-clr);
+}
 /*--------------------------
 	theme white color CSS
 ----------------------------*/
@@ -359,12 +361,11 @@ body.theme-white .suggest-item h2 span.wh_txt {
 }
 
 body.theme-white .progress {
-    background-color: rgba(227, 6, 19, 0.32);
+    background-color: #FCE3E5;
 }
 
-
 body.theme-white .progress.v1 .progress-done-one {
-    background-color: #9F7DDD !important;
+    background: linear-gradient(90deg, rgba(160,126,224,1) 0%, rgba(128,96,171,1) 35%, rgba(93,63,113,1) 100%);
 }
 
 
@@ -438,3 +439,6 @@ body.theme-white .header-right {
     background: var(--white);
 }
 
+body.theme-white .btn.v1{
+    background-color: var(--red);
+}
