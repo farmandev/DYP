@@ -216,9 +216,7 @@ body.theme-dark .hamburger-menu span {
     color: var(--black);
 }
 
-body.theme-dark .header-right {
-    background: var(--grey);
-}
+
 
 /*--------------------------
 	theme white color CSS
